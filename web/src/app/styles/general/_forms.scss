@@ -1,0 +1,145 @@
+// STYLES FOR AUTH FORMS
+.authForm {
+    font-family: var(--chakra-fonts-body);
+    font-size: 14px;
+    color: $color-black;
+
+    .chakra-checkbox__control {
+        margin: 1px 2px 0 0;
+        width: 20px;
+        height: 20px;
+    }
+
+    .chakra-checkbox__label {
+        font-family: $font-2;
+        font-size: 14px;
+        color: $color-black;        
+    }
+
+    a {
+        border-bottom: 1px solid $color-black;
+        text-decoration: none;
+        font-family: $font-2;
+        font-size: 14px;        
+        color: $color-black;
+
+        &:hover {
+            border-bottom: 1px solid transparent;
+            text-decoration: none;
+        }
+
+    }
+
+    .auth-main-form-alerts {     
+        margin-top: -15px;
+
+        .auth-main-form-alert-success,
+        .auth-main-form-alert-error {
+            display: flex;
+            padding: 10px 15px;
+            width: 100%;
+            line-height: 24px;
+            font-size: 14px;
+            font-weight: 400;
+            transform-origin: top;
+            animation: top-to-bottom-animation 0.3s linear forwards;
+
+          .auth-main-form-alert-success-icon,
+          .auth-main-form-alert-error-icon {
+            display: inline-block;
+            margin-right: 5px;
+            font-size: 24px;
+          }
+
+          p {
+            display: inline-block;
+          }
+
+        }
+
+        .auth-main-form-alert-success {
+          background-color: rgba($color: $color-blue, $alpha: 0.1);
+          color: $color-blue;
+
+          .auth-main-form-alert-success-icon {
+            color: $color-blue;
+          }
+        }
+
+        .auth-main-form-alert-error {
+          background-color: rgba($color: $color-red, $alpha: 0.1);
+          color: $color-red;
+
+          .auth-main-form-alert-error-icon {
+            color: $color-red;
+          }
+        }
+    }
+
+    .chakra-stack {
+
+        .chakra-form-control {
+
+            label {
+                margin: 0 0 2px;
+                font-family: $font-2;
+                font-size: 14px;
+                font-weight: 400;
+                color: rgba($color: $color-black, $alpha: 0.7);
+            }
+
+            input[type="email"],
+            input[type="password"] {
+                border: 1px solid rgba($color: $color-grey, $alpha: 0.3);  
+                font-family: $font-1;
+                font-size: 14px;
+                font-weight: 400;
+                box-shadow: none !important;            
+
+                &:focus,
+                &:active {
+                    border: 1px solid rgba($color: $color-grey, $alpha: 0.3);
+                    box-shadow: none !important;
+                    outline: none;
+                    appearance: none;
+                    -webkit-appearance: none;
+                }
+
+                ::-webkit-search-cancel-button {
+                    -webkit-appearance: none;
+                }
+
+                &:valid,
+                &:-webkit-autofill,
+                &:-webkit-autofill:hover, 
+                &:-webkit-autofill:focus, 
+                &:-webkit-autofill:active  {
+                    box-shadow: 0 0 0 30px white inset !important;
+                }
+
+            }
+
+            .chakra-form__error-message {
+                margin: 5px 0 0;
+                color: $color-red;
+
+                svg {
+                    display: inline-block;
+                    margin-top: 2px;
+                    margin-right: 5px;
+                    width: 18px;
+                    height: 18px;
+                }
+
+                span {
+                    font-family: $font-2;
+                    font-size: 13px;
+                }
+
+            }
+
+        }
+
+    }
+
+}

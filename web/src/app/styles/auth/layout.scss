@@ -1,0 +1,13 @@
+// IMPORT GENERAL STYLES
+@import '../general/index';
+
+// IMPORT ANIMATION STYLES
+@import '../animations/index';
+
+html {
+
+    body {
+        background: $color-green;
+    }
+
+}
